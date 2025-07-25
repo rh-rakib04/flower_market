@@ -1,0 +1,56 @@
+* {
+  font-family: "Noto Serif";
+  max-width: 1140px;
+  margin: 10px auto;
+  padding:0 5px;
+}
+
+/* navber style */
+nav,
+nav ol {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+nav img {
+  margin: 0;
+  width: 130px;
+  height: 75px;
+}
+nav ol {
+  gap: 48px;
+  }
+nav li{
+  list-style: none;
+}
+nav a{
+  text-decoration: none;
+  color:#8987A1 ;
+  font-size: 1.25rem;
+}
+.home a{
+  font-weight: bold;
+  color: #252432;
+}
+.cart a{
+  font-weight: 500;
+  color: #252432;
+}
+
+
+
+
+
+/* responsive style */
+@media screen and (max-width:576px) {
+  nav img{
+    width: 63px;
+    height: 38px;
+  }
+  .home,
+  .shop,
+  .about{
+  display: none;
+  }
+}
