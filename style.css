@@ -12,6 +12,7 @@ nav ol {
   justify-content: space-between;
   align-items: center;
   margin: 0;
+  padding: 0 10px;
 }
 nav img {
   margin: 0;
@@ -104,6 +105,40 @@ nav a {
   border-radius: 5px;
   padding: 19px 80px;
 }
+/* plants-lover style */
+.plants-lover {
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 200px;
+}
+.plants-lover-img {
+  position: relative;
+}
+.plants-shop {
+  width: 540px;
+}
+.trusted-badge {
+  width: 286px;
+  height: 286px;
+  position: absolute;
+  top: -120px;
+  right: -90px;
+}
+.plants-lover-text {
+  display: grid;
+  align-items: center;
+}
+.plants-lover-text h5 {
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+.plants-lover-text li {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 30px;
+  margin-top: -10px;
+}
 
 /* responsive style */
 @media screen and (max-width: 576px) {
@@ -129,6 +164,9 @@ nav a {
   .banner img {
     width: 100%;
   }
+  .plants {
+    margin-top: -70px;
+  }
   .plants h3 {
     font-size: 2.5rem;
   }
@@ -148,5 +186,27 @@ nav a {
   .card h5,
   .card h6 {
     font-size: 1rem;
+  }
+  .plants-lover {
+    margin-top: 28px;
+    flex-direction: column;
+    gap: 0;
+  }
+  .plants-shop {
+    width: 100%;
+    margin: auto;
+  }
+  .trusted-badge {
+    display: none;
+  }
+  .plants-lover-text h5 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .plants-lover-text {
+    padding-left: 20px;
+  }
+  .plants-lover-text li {
+    font-size: 0.9rem;
   }
 }
