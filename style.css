@@ -2,7 +2,7 @@
   font-family: "Noto Serif";
   max-width: 1140px;
   margin: 10px auto;
-  padding:0 1px;
+  padding: 0 1px;
 }
 
 /* navber style */
@@ -20,73 +20,133 @@ nav img {
 }
 nav ol {
   gap: 48px;
-  }
-nav li{
+}
+nav li {
   list-style: none;
 }
-nav a{
+nav a {
   text-decoration: none;
-  color:#8987A1 ;
+  color: #8987a1;
   font-size: 1.25rem;
 }
-.home a{
+.home a {
   font-weight: bold;
   color: #252432;
 }
-.cart a{
+.cart a {
   font-weight: 500;
   color: #252432;
 }
 /* banner style */
-.banner{
+.banner {
   display: flex;
   justify-content: space-between;
-  align-items:end;
+  align-items: end;
   margin: 109px auto;
- }
+}
 
-.banner-text h2{
-font-size: 4rem;
-font-weight: bold;
-width: 100%;
+.banner-text h2 {
+  font-size: 4rem;
+  font-weight: bold;
+  width: 100%;
 }
-.banner-text span{
-  color: #E95A08;
-  
+.banner-text span {
+  color: #e95a08;
 }
-.banner-text p{
+.banner-text p {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1.4rem;
   font-family: "Inter";
 }
-.banner img{
-max-width: 570px;
+.banner img {
+  max-width: 570px;
+}
+/* plant style */
+.plants h3 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+.plants h3 span {
+  color: #e95a08;
+}
+.plants p {
+  font-size: 1.4rem;
+  color: rgba(0, 0, 0, 0.5);
+  max-width: 888px;
+  text-align: center;
+}
+.plants-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card {
+  display: grid;
+  justify-content: center;
+}
+.card h5 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  font-family: "Inter";
+}
+.card h6 {
+  margin-top: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Inter";
+}
+.card button {
+  font-family: "Inter";
+  font-weight: 400;
+  color: white;
+  background-color: #e95a08;
+  border: none;
+  border-radius: 5px;
+  padding: 19px 80px;
 }
 
-
-
 /* responsive style */
-@media screen and (max-width:576px) {
-  nav img{
+@media screen and (max-width: 576px) {
+  nav img {
     width: 63px;
     height: 38px;
   }
   .home,
   .shop,
-  .about{
-  display: none;
+  .about {
+    display: none;
   }
-  .banner{
+  .banner {
     margin-top: 28px;
     flex-direction: column-reverse;
   }
-  .banner-text h2{
+  .banner-text h2 {
     font-size: 2.5rem;
   }
-  .banner-text p{
+  .banner-text p {
     font-size: 0.9rem;
   }
-  .banner img{
+  .banner img {
     width: 100%;
+  }
+  .plants h3 {
+    font-size: 2.5rem;
+  }
+  .plants p {
+    font-size: 0.9rem;
+    padding: 0 30px;
+  }
+  .plants-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card img {
+    width: 171px;
+  }
+  .card button {
+    padding: 18px 30px;
+  }
+  .card h5,
+  .card h6 {
+    font-size: 1rem;
   }
 }
