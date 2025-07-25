@@ -123,7 +123,20 @@ nav a {
   height: 286px;
   position: absolute;
   top: -120px;
-  right: -90px;
+  right: -100px;
+  transform: rotate(360deg);
+  animation: rotate-animation 10s infinite linear;
+}
+@keyframes rotate-animation {
+	0% {
+		transform: rotate(0deg);
+  }
+  50% {
+		transform: rotate(180deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
 }
 .plants-lover-text {
   display: grid;
@@ -222,7 +235,67 @@ nav a {
   font-size: 1.75rem;
   color: white;
 }
-
+/* bunch style */
+.bunch {
+  margin-top: 120px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  background-image: url(./assects/news-letter-bg.png);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 155px 260px;
+}
+.bunch h2 {
+  font-size: 3.125rem;
+  font-weight: bold;
+  color: white;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+input {
+  padding: 15px 300px 15px 20px;
+}
+.input button {
+  font-family: "Inter";
+  font-weight: 400;
+  color: white;
+  background-color: #e95a08;
+  border: none;
+  border-radius: 5px;
+  padding: 19px 60px;
+}
+/* footer style */
+footer {
+  display: flex;
+  justify-content: space-between;
+   gap: 20px;
+}
+footer a {
+  text-decoration: none;
+  color: #8987a1;
+}
+.footer1{
+  width: 360px;
+  }
+.footer1 p{
+  color: #8987a1;
+}
+.footer2 a,
+.footer3 a{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.footer4 img{
+  margin-right: 20px;
+}
 /* responsive style */
 @media screen and (max-width: 576px) {
   nav img {
@@ -316,7 +389,43 @@ nav a {
   .join-cards {
     display: flex;
     flex-direction: column;
-    gap: 10px
-    ;
+    gap: 10px;
   }
+  .bunch {
+    margin-top: 40px;
+    padding: 55px 60px;
+    background-size: cover;
+  }
+  .bunch h2 {
+    font-size: 1.25rem;
+  }
+  input {
+    padding: 15px 50px 15px 20px;
+  }
+  .input button {
+    font-family: "Inter";
+    font-weight: 400;
+    color: white;
+    background-color: #e95a08;
+    border: none;
+    border-radius: 5px;
+    padding: 19px 20px;
+  }
+  footer{
+    display: grid;
+    gap: 0;
+  }
+  .footer1{
+    margin-bottom: 0;
+  }
+  .footer2,
+  .footer3{
+    margin-left: 0;
+    margin-bottom: -10px;
+  }
+  .footer4 {
+    display: flex;
+    margin-left: 0;
+   }
+   
 }
